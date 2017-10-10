@@ -1,0 +1,182 @@
+/* Create a Root font-family, font-size, etc., in here! */
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 1.0rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 960px;
+  overflow: visible;
+}
+
+header {
+  position: relative;
+  width: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+header img {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  width: auto;
+}
+
+header p {
+  margin: 0.66rem 1.0rem;
+}
+
+.motorcycle {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: inherit;
+  height: 25rem;
+}
+
+.newArrival {
+  position: relative;
+  background-color: black;
+  margin-top: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  width: 17rem;
+  font-weight: bold;
+}
+
+.sportBikes {
+  margin-top: 0.25rem;
+  font-size: 2rem;
+}
+
+nav {
+  background-color: firebrick;
+  width: inherit;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: inherit;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.specials {
+  width: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.gadget1and2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97.2%;
+  height: 13rem;
+  border: solid 4px black;
+}
+
+.gadget3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97.2%;
+  height: 13rem;
+  border: solid 4px black;
+}
+
+.gadget1and2 img {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 9rem;
+  width: 60%;
+  align-self: center;
+}
+
+.gadget3 img {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 5rem;
+  width: 60%;
+  align-self: center;
+}
+
+.special .specialBanner {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.specialBanner {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.info {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.infoItem {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem p {
+  margin: 0;
+  color: black;
+}
+
+.infoBanner {
+  width: 100%;
+  display: flex;
+  background-color: black;
+}
+
+.infoBanner p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+footer {
+  width: inherit;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
