@@ -63,12 +63,13 @@ header {
 
 .newArrival {
   position: relative;
+  max-width: inherit;
   background-color: black;
   margin-top: 9rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 3rem;
-  width: 23rem;
+  width: 20rem;
   font-weight: bold;
 }
 
@@ -193,9 +194,15 @@ footer {
   align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 470px) {
   .motorcycle {
     height: 15rem;
+  }
+
+  .newArrivalContainer {
+    width: 100%;
+    display: flex;
+/*    align-self: baseline;*/
   }
 
   .newArrival {
@@ -224,6 +231,7 @@ footer {
 
   .special, .infoItem {
     width: 100%;
+    justify-content: center;
   }
 
   .info {
@@ -233,9 +241,19 @@ footer {
   .infoItem {
     height: 5rem;
   }
+
+  .footer {
+  }
+
+  .footerContent {
+    width: inherit;
+  }
+
+  .footerContent p {
+  }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 481px) {
+@media only screen and (max-width: 1024px) and (min-width: 471px) {
   .special {
     width: 47%;
   }
