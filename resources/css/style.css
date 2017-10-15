@@ -49,7 +49,6 @@ header {
 .motorcycle {
   display: flex;
   justify-content: center;
-/*  align-items: center;*/
   background-image: url("../images/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -60,8 +59,6 @@ header {
 
 .newArrivalContainer {
   width: 960px;
-/*  display: flex;
-  align-items: center;*/
 }
 
 .newArrival {
@@ -98,34 +95,23 @@ nav ul {
 }
 
 .specials {
-  width: inherit;
   max-width: 960px;
   align-self: center;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
 .special {
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
 }
 
-.gadget1and2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 97.2%;
-  height: 13rem;
-  border: solid 4px black;
-}
-
-.gadget3 {
+.gadget1and2, .gadget3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,29 +124,31 @@ nav ul {
   padding-top: 2rem;
   padding-bottom: 2rem;
   height: 9rem;
-  width: 60%;
+  width: 9.4rem;
 }
 
 .gadget3 img {
   padding-top: 4rem;
   padding-bottom: 4rem;
   height: 5rem;
-  width: 60%;
+  width: 9.4rem;
 }
 
 .specialBanner {
   width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-around;
   background-color: black;
 }
 
+.specialBanner p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .info {
-  width: inherit;
-/*  max-width: 960px;
-  align-self: center;*/
+  max-width: 960px;
+  align-self: center;
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
@@ -170,10 +158,6 @@ nav ul {
   width: 35%;
   display: flex;
   flex-direction: column;
-}
-
-.infoItem p {
-  margin: 0;
   color: black;
 }
 
@@ -184,28 +168,29 @@ nav ul {
 }
 
 .infoBanner p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
   color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 footer {
+  position: relative;
   width: inherit;
   height: 10rem;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
+  top: 0;
+  left: 0;
   background-color: black;
 }
 
-@media only screen and (max-width: 470px) {
-  .watch {
-    display: none;
-  }
-
-  .special {
-    width: 90%;
-  }
+.footerContent {
+  width: 960px;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -217,6 +202,10 @@ footer {
     display: none;
   }
 
+  .specials, .info {
+    width: inherit;
+  }
+
   nav ul {
     justify-content: center;
   }
@@ -225,17 +214,17 @@ footer {
     width: 47%;
   }
 
-  .gadget1and2 {
+  .gadget1and2, .gadget3 {
     width: 98.2%;
-  }
-
-  .gadget1and2 img {
-    width: 40%;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   .menu {
     display: none;
+  }
+
+  .specials, .info {
+    width: 960px;
   }
 }
